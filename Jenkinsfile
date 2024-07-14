@@ -6,13 +6,13 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the project, e.g., using Maven
-                sh 'mvn clean install'
+                bat 'mvn clean install'
             }
         }
         stage('Test') {
             steps {
                 // Run the tests
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
     }
